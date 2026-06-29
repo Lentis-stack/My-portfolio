@@ -1,0 +1,4 @@
+Icons placeholder folder.
+
+Replace/add your own SVG/PNG icons here if you want.
+This portfolio uses inline/emoji icons for simplicity (no external icon libraries).

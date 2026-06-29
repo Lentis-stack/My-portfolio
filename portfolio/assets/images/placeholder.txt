@@ -1,0 +1,7 @@
+Images placeholder folder.
+
+Replace:
+- profile.jpg
+- project-1.jpg ... project-6.jpg
+with your own assets.
+

@@ -1,0 +1,672 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Portfolio of Saheed Ibraheem — Software Engineering Student with 6 months of hands-on web development experience." />
+  <meta name="theme-color" content="#0F172A" />
+  <title>Saheed Ibraheem | Software Engineering Student</title>
+
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+  <!-- Loading screen (fast fade-out) -->
+  <div class="loading" aria-hidden="true">
+    <div class="loading__ring"></div>
+    <p class="loading__text">Loading portfolio…</p>
+  </div>
+
+  <a class="skip-link" href="#home">Skip to content</a>
+
+  <!-- Sticky Navigation -->
+  <header class="nav">
+    <div class="nav__inner">
+      <a class="brand" href="#home" aria-label="Saheed Ibraheem home">
+        <span class="brand__mark">SI</span>
+      </a>
+
+      <nav class="nav__links" aria-label="Primary navigation">
+        <a class="nav__link" href="#home" data-nav="home">Home</a>
+        <a class="nav__link" href="#about" data-nav="about">About</a>
+        <a class="nav__link" href="#skills" data-nav="skills">Skills</a>
+        <a class="nav__link" href="#projects" data-nav="projects">Projects</a>
+        <a class="nav__link" href="#experience" data-nav="experience">Experience</a>
+        <a class="nav__link" href="#education" data-nav="education">Education</a>
+        <a class="nav__link" href="#contact" data-nav="contact">Contact</a>
+      </nav>
+
+      <div class="nav__actions">
+        <!-- Dark/Light toggle -->
+        <button class="icon-btn" id="themeToggle" type="button" aria-label="Toggle dark mode" aria-pressed="true">
+          <span class="icon" aria-hidden="true">🌙</span>
+          <span class="icon-btn__text">Theme</span>
+        </button>
+
+        <!-- Mobile hamburger -->
+        <button class="hamburger" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mobileMenu">
+          <span class="hamburger__bar"></span>
+          <span class="hamburger__bar"></span>
+          <span class="hamburger__bar"></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile menu -->
+    <div class="mobile-menu" id="mobileMenu" hidden>
+      <div class="mobile-menu__panel" role="dialog" aria-label="Mobile navigation">
+        <a class="mobile-menu__link" href="#home">Home</a>
+        <a class="mobile-menu__link" href="#about">About</a>
+        <a class="mobile-menu__link" href="#skills">Skills</a>
+        <a class="mobile-menu__link" href="#projects">Projects</a>
+        <a class="mobile-menu__link" href="#experience">Experience</a>
+        <a class="mobile-menu__link" href="#education">Education</a>
+        <a class="mobile-menu__link" href="#contact">Contact</a>
+
+        <div class="mobile-menu__footer">
+          <a class="pill" href="#contact">Let’s talk</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main id="home">
+    <!-- HERO -->
+    <section class="hero" aria-label="Introduction">
+      <div class="container hero__grid">
+        <div class="hero__left reveal">
+          <p class="kicker">Software Engineering Student • 6 months hands-on web development</p>
+
+          <h1 class="hero__title">
+            <span class="hero__title-line">Hi, I&apos;m</span>
+            <span class="hero__title-name">Saheed Ibraheem</span>
+          </h1>
+
+          <h2 class="hero__subtitle" aria-live="polite">
+            <span class="hero__subtitle-label">Software Engineering Student</span>
+            <span class="hero__typing" aria-hidden="true">
+              <span class="hero__typing-caret">|</span>
+            </span>
+          </h2>
+
+          <p class="hero__intro">
+            I build responsive, user-friendly websites and continuously improve my skills by learning modern web technologies and building real-world projects.
+          </p>
+
+          <div class="hero__buttons">
+            <a class="btn btn--primary" href="#contact" id="downloadCvBtn" download="Saheed-Ibraheem-CV.pdf">
+              <span class="btn__bg"></span>
+              Download CV
+              <span class="btn__ripple" aria-hidden="true"></span>
+            </a>
+            <a class="btn btn--ghost" href="#contact">
+              <span class="btn__bg"></span>
+              Contact Me
+              <span class="btn__ripple" aria-hidden="true"></span>
+            </a>
+          </div>
+
+          <div class="hero__social" aria-label="Social links">
+            <a class="social" href="#" target="_blank" rel="noreferrer" aria-label="GitHub">
+              <span class="social__icon" aria-hidden="true"></span>
+              <span class="social__label">GitHub</span>
+            </a>
+            <a class="social" href="#" target="_blank" rel="noreferrer" aria-label="LinkedIn">
+              <span class="social__icon" aria-hidden="true">in</span>
+              <span class="social__label">LinkedIn</span>
+            </a>
+            <a class="social" href="#" target="_blank" rel="noreferrer" aria-label="Twitter / X">
+              <span class="social__icon" aria-hidden="true">𝕏</span>
+              <span class="social__label">X</span>
+            </a>
+            <a class="social" href="mailto:saheed@example.com" aria-label="Email">
+              <span class="social__icon" aria-hidden="true">✉</span>
+              <span class="social__label">Email</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="hero__right reveal">
+          <div class="profile" aria-label="Profile image">
+            <div class="profile__ring"></div>
+            <div class="profile__img-wrap">
+              <img src="assets/images/profile.jpg" alt="Profile photo placeholder" class="profile__img" loading="eager" />
+            </div>
+          </div>
+
+          <div class="hero__cards">
+            <div class="mini-stat glass">
+              <div class="mini-stat__value">6</div>
+              <div class="mini-stat__label">Months Experience</div>
+            </div>
+            <div class="mini-stat glass">
+              <div class="mini-stat__value">10+</div>
+              <div class="mini-stat__label">Projects Built</div>
+            </div>
+          </div>
+
+          <div class="hero__callout glass">
+            <p class="hero__callout-title">Currently</p>
+            <p class="hero__callout-text">Open to internships & front-end roles where I can contribute and grow.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section">
+      <div class="container">
+        <div class="section__head reveal">
+          <h2 class="section__title">About</h2>
+          <p class="section__subtitle">A quick story, skills, and what I’m aiming for.</p>
+        </div>
+
+        <div class="grid grid--2">
+          <article class="card glass reveal">
+            <h3 class="card__title">Professional About Me</h3>
+            <p class="card__text">
+              I am Saheed Ibraheem, a Software Engineering student with 6 months of practical experience building responsive web applications. I enjoy solving problems through code and continuously improving my skills by working on personal projects.
+            </p>
+
+            <div class="skill-tags" aria-label="Current skills">
+              <span class="tag">HTML</span>
+              <span class="tag">CSS</span>
+              <span class="tag">JavaScript</span>
+              <span class="tag">Python</span>
+              <span class="tag">Basic React</span>
+            </div>
+
+            <p class="card__text card__text--muted">
+              I am currently looking for internship opportunities where I can grow as a software engineer while contributing to meaningful projects.
+            </p>
+          </article>
+
+          <div class="stats grid grid--2">
+            <div class="stat glass reveal">
+              <div class="stat__num" data-count="6">0</div>
+              <div class="stat__label">Months Experience</div>
+            </div>
+            <div class="stat glass reveal">
+              <div class="stat__num" data-count="10">0</div>
+              <div class="stat__label">10+ Projects</div>
+            </div>
+            <div class="stat glass reveal">
+              <div class="stat__num" data-count="5">0</div>
+              <div class="stat__label">5 Technologies</div>
+            </div>
+            <div class="stat glass reveal">
+              <div class="stat__num" data-count="1">0</div>
+              <div class="stat__label">Open to Internship</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="section section--alt">
+      <div class="container">
+        <div class="section__head reveal">
+          <h2 class="section__title">Skills</h2>
+          <p class="section__subtitle">Animated progress bars with a premium feel.</p>
+        </div>
+
+        <div class="skills grid grid--2">
+          <div class="skills__left reveal">
+            <div class="card glass">
+              <h3 class="card__title">Technical Skills</h3>
+
+              <div class="progress" data-progress="95">
+                <div class="progress__row">
+                  <span class="progress__label">HTML</span>
+                  <span class="progress__value">95%</span>
+                </div>
+                <div class="progress__bar" aria-hidden="true"><span class="progress__fill"></span></div>
+              </div>
+
+              <div class="progress" data-progress="80">
+                <div class="progress__row">
+                  <span class="progress__label">CSS</span>
+                  <span class="progress__value">80%</span>
+                </div>
+                <div class="progress__bar" aria-hidden="true"><span class="progress__fill"></span></div>
+              </div>
+
+              <div class="progress" data-progress="80">
+                <div class="progress__row">
+                  <span class="progress__label">JavaScript</span>
+                  <span class="progress__value">80%</span>
+                </div>
+                <div class="progress__bar" aria-hidden="true"><span class="progress__fill"></span></div>
+              </div>
+
+              <div class="progress" data-progress="75">
+                <div class="progress__row">
+                  <span class="progress__label">Python</span>
+                  <span class="progress__value">75%</span>
+                </div>
+                <div class="progress__bar" aria-hidden="true"><span class="progress__fill"></span></div>
+              </div>
+
+              <div class="progress" data-progress="50">
+                <div class="progress__row">
+                  <span class="progress__label">React</span>
+                  <span class="progress__value">50%</span>
+                </div>
+                <div class="progress__bar" aria-hidden="true"><span class="progress__fill"></span></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="skills__right reveal">
+            <div class="card glass">
+              <h3 class="card__title">Strengths</h3>
+
+              <div class="progress" data-progress="75">
+                <div class="progress__row">
+                  <span class="progress__label">Git</span>
+                  <span class="progress__value">75%</span>
+                </div>
+                <div class="progress__bar" aria-hidden="true"><span class="progress__fill"></span></div>
+              </div>
+
+              <div class="progress" data-progress="90">
+                <div class="progress__row">
+                  <span class="progress__label">Responsive Design</span>
+                  <span class="progress__value">90%</span>
+                </div>
+                <div class="progress__bar" aria-hidden="true"><span class="progress__fill"></span></div>
+              </div>
+
+              <div class="progress" data-progress="85">
+                <div class="progress__row">
+                  <span class="progress__label">Problem Solving</span>
+                  <span class="progress__value">85%</span>
+                </div>
+                <div class="progress__bar" aria-hidden="true"><span class="progress__fill"></span></div>
+              </div>
+
+              <div class="tech-icons" aria-label="Skill icons">
+                <div class="tech-icon glass" role="img" aria-label="HTML icon">⌁</div>
+                <div class="tech-icon glass" role="img" aria-label="CSS icon">◈</div>
+                <div class="tech-icon glass" role="img" aria-label="JavaScript icon">⚡</div>
+                <div class="tech-icon glass" role="img" aria-label="Python icon">π</div>
+                <div class="tech-icon glass" role="img" aria-label="React icon">⟡</div>
+                <div class="tech-icon glass" role="img" aria-label="Git icon">⌘</div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section">
+      <div class="container">
+        <div class="section__head reveal">
+          <h2 class="section__title">Projects</h2>
+          <p class="section__subtitle">A selection of work—designed, built, and refined.</p>
+        </div>
+
+        <div class="projects grid grid--3">
+          <!-- 1 -->
+          <article class="project card glass reveal">
+            <div class="project__media">
+              <img src="assets/images/event gallery.jpg" alt="Event Gallery Platform screenshot placeholder" loading="lazy" />
+              <div class="project__overlay" aria-hidden="true"></div>
+            </div>
+            <div class="project__body">
+              <h3 class="project__title">Event Gallery Platform</h3>
+              <p class="project__desc">A responsive platform for browsing event galleries with smooth UI interactions.</p>
+              <div class="badges" aria-label="Technologies used">
+                <span class="badge">HTML</span>
+                <span class="badge">CSS</span>
+                <span class="badge">JavaScript</span>
+              </div>
+              <div class="project__actions">
+                <a class="btn btn--primary btn--small" href="#">Live Demo<span class="btn__ripple" aria-hidden="true"></span></a>
+                <a class="btn btn--ghost btn--small" href="#">GitHub<span class="btn__ripple" aria-hidden="true"></span></a>
+              </div>
+            </div>
+          </article>
+
+          <!-- 2 -->
+          <article class="project card glass reveal">
+            <div class="project__media">
+              <img src="assets/images/student management system.jpg" alt="Student Management System screenshot placeholder" loading="lazy" />
+              <div class="project__overlay" aria-hidden="true"></div>
+            </div>
+            <div class="project__body">
+              <h3 class="project__title">Student Management System</h3>
+              <p class="project__desc">Manage student records with clean layouts and practical UI components.</p>
+              <div class="badges" aria-label="Technologies used">
+                <span class="badge">Python</span>
+                <span class="badge">HTML</span>
+                <span class="badge">CSS</span>
+              </div>
+              <div class="project__actions">
+                <a class="btn btn--primary btn--small" href="#">Live Demo<span class="btn__ripple" aria-hidden="true"></span></a>
+                <a class="btn btn--ghost btn--small" href="#">GitHub<span class="btn__ripple" aria-hidden="true"></span></a>
+              </div>
+            </div>
+          </article>
+
+          <!-- 3 -->
+          <article class="project card glass glass--tall reveal">
+            <div class="project__media">
+              <img src="assets/images/weather app.jpg" alt="Weather App screenshot placeholder" loading="lazy" />
+              <div class="project__overlay" aria-hidden="true"></div>
+            </div>
+            <div class="project__body">
+              <h3 class="project__title">Weather App</h3>
+              <p class="project__desc">A modern weather experience with dynamic UI and accessible interactions.</p>
+              <div class="badges" aria-label="Technologies used">
+                <span class="badge">JavaScript</span>
+                <span class="badge">HTML</span>
+                <span class="badge">CSS</span>
+              </div>
+              <div class="project__actions">
+                <a class="btn btn--primary btn--small" href="#">Live Demo<span class="btn__ripple" aria-hidden="true"></span></a>
+                <a class="btn btn--ghost btn--small" href="#">GitHub<span class="btn__ripple" aria-hidden="true"></span></a>
+              </div>
+            </div>
+          </article>
+
+          <!-- 4 -->
+          <article class="project card glass reveal">
+            <div class="project__media">
+              <img src="assets/images/portfolio website.jpg" alt="Portfolio Website screenshot placeholder" loading="lazy" />
+              <div class="project__overlay" aria-hidden="true"></div>
+            </div>
+            <div class="project__body">
+              <h3 class="project__title">Portfolio Website</h3>
+              <p class="project__desc">A premium portfolio template style with micro interactions and smooth scrolling.</p>
+              <div class="badges" aria-label="Technologies used">
+                <span class="badge">HTML</span>
+                <span class="badge">CSS</span>
+                <span class="badge">JavaScript</span>
+              </div>
+              <div class="project__actions">
+                <a class="btn btn--primary btn--small" href="#">Live Demo<span class="btn__ripple" aria-hidden="true"></span></a>
+                <a class="btn btn--ghost btn--small" href="#">GitHub<span class="btn__ripple" aria-hidden="true"></span></a>
+              </div>
+            </div>
+          </article>
+
+          <!-- 5 -->
+          <article class="project card glass reveal">
+            <div class="project__media">
+              <img src="assets/images/task manager.jpg" alt="Task Manager screenshot placeholder" loading="lazy" />
+              <div class="project__overlay" aria-hidden="true"></div>
+            </div>
+            <div class="project__body">
+              <h3 class="project__title">Task Manager</h3>
+              <p class="project__desc">Create, organize, and track tasks with a clean, minimal interface.</p>
+              <div class="badges" aria-label="Technologies used">
+                <span class="badge">JavaScript</span>
+                <span class="badge">UI/UX</span>
+                <span class="badge">Accessibility</span>
+              </div>
+              <div class="project__actions">
+                <a class="btn btn--primary btn--small" href="#">Live Demo<span class="btn__ripple" aria-hidden="true"></span></a>
+                <a class="btn btn--ghost btn--small" href="#">GitHub<span class="btn__ripple" aria-hidden="true"></span></a>
+              </div>
+            </div>
+          </article>
+
+          <!-- 6 -->
+          <article class="project card glass reveal">
+            <div class="project__media">
+              <img src="assets/images/calculator app.jpg" alt="Calculator App screenshot placeholder" loading="lazy" />
+              <div class="project__overlay" aria-hidden="true"></div>
+            </div>
+            <div class="project__body">
+              <h3 class="project__title">Calculator App</h3>
+              <p class="project__desc">A sleek calculator UI with smooth animations and responsive layout.</p>
+              <div class="badges" aria-label="Technologies used">
+                <span class="badge">JavaScript</span>
+                <span class="badge">CSS</span>
+                <span class="badge">HTML</span>
+              </div>
+              <div class="project__actions">
+                <a class="btn btn--primary btn--small" href="#">Live Demo<span class="btn__ripple" aria-hidden="true"></span></a>
+                <a class="btn btn--ghost btn--small" href="#">GitHub<span class="btn__ripple" aria-hidden="true"></span></a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section id="experience" class="section section--alt">
+      <div class="container">
+        <div class="section__head reveal">
+          <h2 class="section__title">Experience</h2>
+          <p class="section__subtitle">A focused timeline of progress.</p>
+        </div>
+
+        <div class="timeline reveal" role="list" aria-label="Experience timeline">
+          <div class="timeline__item glass" role="listitem">
+            <div class="timeline__dot" aria-hidden="true"></div>
+            <div class="timeline__content">
+              <h3 class="timeline__title">Software Engineering Student</h3>
+              <p class="timeline__meta">Duration: 6 Months</p>
+              <ul class="timeline__list">
+                <li>Built responsive websites</li>
+                <li>Learned frontend development</li>
+                <li>Improved JavaScript skills</li>
+                <li>Worked on personal projects</li>
+                <li>Practiced clean code principles</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EDUCATION -->
+    <section id="education" class="section">
+      <div class="container">
+        <div class="section__head reveal">
+          <h2 class="section__title">Education</h2>
+          <p class="section__subtitle">Courses that shaped my fundamentals.</p>
+        </div>
+
+        <div class="grid grid--2">
+          <article class="card glass reveal">
+            <h3 class="card__title">Software Engineering Student</h3>
+            <p class="card__text card__text--muted">Focused coursework covering modern web development fundamentals and UI/UX.</p>
+          </article>
+
+          <article class="card glass reveal">
+            <h3 class="card__title">Relevant Coursework</h3>
+            <div class="course-grid" aria-label="Coursework list">
+              <span class="tag">HTML</span>
+              <span class="tag">CSS</span>
+              <span class="tag">JavaScript</span>
+              <span class="tag">Python</span>
+              <span class="tag">React Basics</span>
+              <span class="tag">Git &amp; GitHub</span>
+              <span class="tag">Responsive Web Design</span>
+              <span class="tag">UI/UX Fundamentals</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES + ACHIEVEMENTS -->
+    <section class="section section--alt">
+      <div class="container">
+        <div class="section__head reveal">
+          <h2 class="section__title">Services & Achievements</h2>
+          <p class="section__subtitle">What I can help with and what I’ve been building.</p>
+        </div>
+
+        <div class="grid grid--2">
+          <div class="services">
+            <div class="grid grid--2">
+              <article class="service card glass reveal">
+                <h3 class="service__title">Frontend Development</h3>
+                <p class="service__text">Modern UI, semantic HTML, and responsive layouts.</p>
+              </article>
+              <article class="service card glass reveal">
+                <h3 class="service__title">Responsive Web Design</h3>
+                <p class="service__text">Mobile-first structures that scale smoothly.</p>
+              </article>
+              <article class="service card glass reveal">
+                <h3 class="service__title">Website Maintenance</h3>
+                <p class="service__text">Updates, improvements, and performance tuning.</p>
+              </article>
+              <article class="service card glass reveal">
+                <h3 class="service__title">Landing Pages</h3>
+                <p class="service__text">High-converting pages with premium visuals.</p>
+              </article>
+              <article class="service card glass reveal">
+                <h3 class="service__title">UI Implementation</h3>
+                <p class="service__text">Clean component structure and pixel-level refinement.</p>
+              </article>
+              <article class="service card glass reveal">
+                <h3 class="service__title">Bug Fixing</h3>
+                <p class="service__text">Practical debugging and code hardening.</p>
+              </article>
+            </div>
+          </div>
+
+          <aside class="achievements">
+            <div class="grid grid--2">
+              <div class="achievement stat glass reveal">
+                <div class="stat__num" data-count="12">0</div>
+                <div class="stat__label">Projects Completed</div>
+              </div>
+              <div class="achievement stat glass reveal">
+                <div class="stat__num" data-count="8">0</div>
+                <div class="stat__label">Technologies Learned</div>
+              </div>
+              <div class="achievement stat glass reveal">
+                <div class="stat__num" data-count="240">0</div>
+                <div class="stat__label">Coding Hours</div>
+              </div>
+              <div class="achievement stat glass reveal">
+                <div class="stat__num" data-count="3">0</div>
+                <div class="stat__label">Certificates</div>
+              </div>
+            </div>
+
+            <div class="card glass reveal">
+              <h3 class="card__title">My Focus</h3>
+              <p class="card__text card__text--muted">
+                Build fast, accessible, and beautiful web experiences. I love micro-interactions, thoughtful spacing, and scalable UI.
+              </p>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section">
+      <div class="container">
+        <div class="section__head reveal">
+          <h2 class="section__title">Contact</h2>
+          <p class="section__subtitle">Let’s create something premium together.</p>
+        </div>
+
+        <div class="grid grid--2">
+          <form class="card glass reveal contact" id="contactForm">
+            <h3 class="card__title">Send Message</h3>
+            <div class="form-grid">
+              <label class="field">
+                <span class="field__label">Name</span>
+                <input type="text" name="name" required autocomplete="name" placeholder="Your name" />
+              </label>
+
+              <label class="field">
+                <span class="field__label">Email</span>
+                <input type="email" name="email" required autocomplete="email" placeholder="you@example.com" />
+              </label>
+
+              <label class="field field--full">
+                <span class="field__label">Subject</span>
+                <input type="text" name="subject" required placeholder="How can I help?" />
+              </label>
+
+              <label class="field field--full">
+                <span class="field__label">Message</span>
+                <textarea name="message" required rows="5" placeholder="Write your message…"></textarea>
+              </label>
+            </div>
+
+            <button class="btn btn--primary" type="submit">
+              <span class="btn__bg"></span>
+              Send Message
+              <span class="btn__ripple" aria-hidden="true"></span>
+            </button>
+
+            <p class="form__status" role="status" aria-live="polite"></p>
+          </form>
+
+          <div class="contact__side">
+            <div class="contact-cards grid grid--1">
+              <div class="card glass reveal">
+                <h3 class="card__title">Email</h3>
+                <p class="contact__value"><a href="mailto:saheed.ibraheem@yahoo.com">saheed.ibraheem@yahoo.com</a></p>
+              </div>
+              <div class="card glass reveal">
+                <h3 class="card__title">Phone</h3>
+                <p class="contact__value"><a href="tel:+2349115074050">+234 911 507 4050</a></p>
+              </div>
+              <div class="card glass reveal">
+                <h3 class="card__title">Location</h3>
+                <p class="contact__value">Nigeria, UAE • Remote-friendly</p>
+              </div>
+            </div>
+
+            <div class="card glass reveal">
+              <h3 class="card__title">Social</h3>
+              <div class="social-grid">
+                <a class="social social--small" href="#" target="_blank" rel="noreferrer">
+                  <span class="social__icon" aria-hidden="true"></span>
+                  <span>GitHub</span>
+                </a>
+                <a class="social social--small" href="#" target="_blank" rel="noreferrer">
+                  <span class="social__icon" aria-hidden="true">in</span>
+                  <span>LinkedIn</span>
+                </a>
+                <a class="social social--small" href="#" target="_blank" rel="noreferrer">
+                  <span class="social__icon" aria-hidden="true">𝕏</span>
+                  <span>X</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container footer__inner">
+        <div>
+          <p class="footer__name">Saheed Ibraheem</p>
+          <p class="footer__role">Software Engineering Student</p>
+        </div>
+        <p class="footer__copy">© 2026 All Rights Reserved.</p>
+      </div>
+    </footer>
+
+    <!-- Back to top -->
+    <button class="to-top" type="button" aria-label="Back to top" title="Back to top">
+      ↑
+    </button>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
