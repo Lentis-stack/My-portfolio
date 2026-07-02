@@ -115,7 +115,7 @@
 
   // -------------------- Typing animation --------------------
   // Requirements: cycles through:
-  // Software Engineering Student
+  // Software Engineer
   // Frontend Developer
   // JavaScript Developer
   // Problem Solver
@@ -125,7 +125,7 @@
 
   if (subtitleLabel && typingParent) {
     const phrases = [
-      'Software Engineering Student',
+      'Software Engineer',
       'Frontend Developer',
       'JavaScript Developer',
       'Problem Solver'
